@@ -61,8 +61,10 @@ namespace PoolApp
 
         }
 
+        //Adding client
         private void button1_Click(object sender, EventArgs e)
         {
+            
             string fio = textBox1.Text;
             int phone = Convert.ToInt32(textBox2.Text);
             DateTime bday = Convert.ToDateTime(dateTimePicker1.Text); ;
@@ -92,6 +94,7 @@ namespace PoolApp
 
         }
 
+        //Updating client
         private void button2_Click(object sender, EventArgs e)
         {
             //Переносим значение текстового поля в таблицу
@@ -115,6 +118,7 @@ namespace PoolApp
             }
         }
 
+        //deleting client
         private void button3_Click(object sender, EventArgs e)
         {
             int selectedRowIndex = dataGridView1.SelectedCells[0].RowIndex;
